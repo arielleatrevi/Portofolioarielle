@@ -1,0 +1,134 @@
+body{
+background-color: white;
+margin-top: 40px;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: relative;
+  height: 10vh;
+  background-color:#111;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  gap:380px;
+ 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 50px;
+  position: relative;
+  z-index: 2;
+  margin-top: -5px;
+}
+
+.nom {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-lien {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-lien li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-lien li a:hover {
+  color: #f8da89;
+}
+
+.cadre{
+display:flex ;
+gap: 25px;
+padding: 12px;
+justify-content: center;
+}
+
+.icadre{
+border: 2.5px solid rgba(226, 223, 223, 0.723);
+background-color: rgba(247, 244, 244, 0.388);
+color: black;
+width: 320px;
+height: 200px;
+border-radius: 6px;
+line-height: 1.6; 
+margin-top: -20px;
+}
+
+h1 {
+  text-align: center;
+  align-items: center;
+  color: black;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 13.5px;
+  padding: 30px;
+  margin-top: -10px;
+  }
+
+.hilight {
+  font-size: 22px;
+  font-weight: 900;
+  }
+
+.hilight2 {
+  font-size: 15;
+  line-height: 1.8;
+  text-align: left;
+  margin-top: -10px;
+  }
+
+ .bouton{
+  font-size: 14px;
+  background-color: #f2cb06;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.icone {
+background-color: white;
+text-align: center;
+justify-content: center;
+display: flex;
+gap: 115px;
+margin-top: 5px;
+}
+
+.iconeim{
+  width: 130px;
+  height: auto;
+  }
+
+footer{
+background-color: rgba(189, 179, 179, 0.799);
+color: rgb(58, 55, 55);
+font-size: 15px;
+text-align: center;
+justify-content: center;
+height: 60px;
+display: flex;
+gap: 700px;
+margin-top: 60px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+<body>
+    <h2>Tableau</h2>
+    <table border="2" style="border-collapse: collapse;">
+     <tr id="nbrligne">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+     </tr>
+
+     <tr>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+     </tr>
+     </table>
+
+     <br>
+
+     <input type="number" id="nombre" placeholder="Nombre à ajouter">
+     <button onclick="ajouter()" style="width: 75px;">Ajouter</button>
+     
+     <script>
+        function ajouter() {
+        const n = document.getElementById("nombre").value; 
+
+        if (n !== "") {
+            const newligne = document.getElementById("nbrligne")
+            const newcellule = document.createElement("td");
+            newcellule.textContent = n ;
+            newligne.appendChild(newcellule);
+
+        document.getElementById("nombre").value="";
+        }
+      }
+     </script>
+
+     <br><br>
+     <input type="number" id="supprimer" placeholder="Nombre à supprimer">
+     <button onclick="supprimer()">Supprimer</button>
+      
+     <script>
+      function supprimer() {
+      const n1 = document.getElementById( "supprimer").value; 
+      const ligne = document.getElementById("nbrligne");
+      const cellules =ligne.getElementsByTagName("td");
+      for (let i = 0; i < cellules.length; i++) {
+        if(cellules[i].textContent === n1){
+            ligne.deleteCell(i);
+            break;
+              }
+      }
+      document.getElementById("supprimer").value =("");
+      }
+     </script>
+     <br><br>
+    
+     <label for="ranger">Ranger par ordre croissant: </label>
+     <button onclick="ordreocroissant()" style="width: 75px;">Ranger</button>
+
+     <script>
+        function ordreocroissant() {
+            const line = document.getElementById("nbrligne");
+            const cellules = Array.from(line.children);
+            const valeurs = cellules.map(cellule => parseInt(cellule.textContent));
+            valeurs.sort((a,b) => a-b);
+            for (let i = 0; i < cellules.length; i++) {
+                cellules[i].textContent = valeurs[i];   
+            } 
+        }
+     </script>
+
+<p><strong></strong><a href="projets.html" class="bouton">⬅ Retour</a></strong></p>
+
+<style>
+.bouton{
+  font-size: 16px;
+  background-color: #f2cb06;
+  display: inline-block;
+  border: none;
+  color: black;
+  text-align: left;
+  padding: 10px 20px;
+  justify-content: left;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 280px;
+  text-decoration: none;
+}
+</style>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets</title>
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="nom">ATREVI <span style="color: #F7C948;">Arielle</span></div>
+      <ul class="nav-lien">
+        <li><a href="accueil.html" style="color: #F7C948;">Accueil</a></li>
+        <li><a href="a propos.html">À propos</a></li>
+        <li><a href="compétences.html">Mes compétences</a></li>
+        <li><a href="projets.html">Mes projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <h1>MES PROJETS</h1>
+    <p class="hilight2">Passionnée du numérique, j'ai entamé une reconversion professionnelle depuis 6 ans. Dans de mon parcours, j'ai eu à travailler sur
+        plusieurs projets que je vous présente ci-dessous pour vous permettre de mieux cerner mes compétences.
+    </p>
+
+ <div class="cadre">
+    <div>
+        <p class="icadre"><span class="hilight">Projet 1</span> <br><br><br> création de logo, d'une plaquette commerciale, de wireframes et d'un prototype haute fidélité pour 
+            l'application web mobile de Leader'space <br><br><span><button id =bouton1 class="bouton">Voir projet</button></span></p>
+
+    </div>
+
+    <div>
+        <p class="icadre"><span class="hilight">Projet 2</span> <br><br> Création de fichier HTML, d'une interface utilisateur pour la saisir des informations
+        Calculateur du paiement mensuel d'un prêt hypotécaire<br><br><span><button  class="bouton" id = "bouton2">Voir projet</button></span></p>
+    </div>
+
+    <div>
+        <p class="icadre"><span class="hilight">Projet 3</span> <br><br> Création de fichier HTML contenant un tableau avec nombre. Utilisation de JavasScript
+        pour ajouter, supprimer un élément et trier par ordre croissant.<br><br><span><button class="bouton" id = "bouton3">Voir projet</button></span></p>
+    </div>
+
+ </div>   
+
+ <section>
+    <div class="icone">
+        <img src="icones (4).png" alt="" class="iconeim">
+        <img src="icones (5).png" alt="" class="iconeim">
+        <img src="icones (3).png" alt="" class="iconeim">
+        <img src="icones (6).png" alt="" class="iconeim"> 
+        <img src="icones (1).png" alt="" class="iconeim">
+      </div>
+ </section>
+
+   <script>
+    const bouton1 = document.getElementById('bouton1');
+
+    bouton1.addEventListener('mouseover', ()=> {
+    bouton1.style.backgroundColor = '#0c9a0a';
+    });
+
+    bouton1.addEventListener('mouseout', ()=> {
+    bouton1.style.backgroundColor = '#f2cb06';
+    });
+
+    bouton1.addEventListener('click', ()=> {
+      window.location = 'Ledearspace.html';
+       });
+    </script>
+
+    <script>
+    const bouton2 = document.getElementById('bouton2');
+
+    bouton2.addEventListener('mouseover', ()=> {
+    bouton2.style.backgroundColor = '#0c9a0a';
+    });
+
+    bouton2.addEventListener('mouseout', ()=> {
+    bouton2.style.backgroundColor = '#f2cb06';
+    });
+
+    bouton2.addEventListener('click', ()=> {
+    window.location = 'calculateur1.html';
+       });
+    </script>
+
+    <script>
+    const bouton3 = document.getElementById('bouton3');
+
+    bouton3.addEventListener('mouseover', ()=> {
+    bouton3.style.backgroundColor = '#0c9a0a';
+    });
+
+    bouton3.addEventListener('mouseout', ()=> {
+    bouton3.style.backgroundColor = '#f2cb06';
+    });
+
+    bouton3.addEventListener('click', ()=> {
+    window.location = 'Tableau.html';
+       });
+        
+    </script>
+</body>
+<footer>
+      <p>Designed by Arielle with HTML CSS JS</p>
+      <p>Tous droits réservés-2025</p>
+    </footer>
+</html>

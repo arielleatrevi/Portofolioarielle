@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de paie</title>
+</head>
+
+<body>
+
+<h2>Calcul paiement mensuel prêt hypotécaire</h2>
+
+ <label for="montant">Montant du prêt:</label>
+ <input type="number" id="p" required>
+ <label for="taux">Taux d'intérêt annuel:</label>
+ <input type="number" id= "taux" required>
+ <label for="durée">Durées en années:</label>
+ <input type="number" id="durée" required>
+ <button onclick="calculerpaie()">Calculer</button>
+<br><br>
+<p id = "result"></p>
+
+<strong></strong><a href="projets.html" class="bouton">⬅ Retour</a></strong>
+
+<style>
+.bouton{
+  font-size: 16px;
+  background-color: #f2cb06;
+  display: inline-block;
+  border: none;
+  color: black;
+  text-align: left;
+  padding: 10px 20px;
+  justify-content: left;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 380px;
+  text-decoration: none;
+}
+</style>
+
+<script>
+    function calculerpaie() {
+        
+const p = parseFloat(document.getElementById("p").value);
+const taux = parseFloat(document.getElementById("taux").value);
+const dur = parseFloat(document.getElementById("durée").value);
+
+if (isNaN(p) || isNaN(taux) || isNaN(dur)){ 
+    document.getElementById("result").textContent = "Veuillez remplir tous les champs";
+    return;
+    }
+    const r = taux/100/12;
+    const n = dur*12;
+    const M = p * r * Math.pow(1 + r , n) / (Math.pow(1 + r , n)-1);
+    document.getElementById("result").textContent = "Le paiement mensuel du prêt est : " + M.toFixed(2) + " Fcfa";
+}
+</script>
+</body>
+</html>

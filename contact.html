@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <p id = confirmation class="affichage"></p>
+<div class="affiche">
+        <h2>Vous avez un <span class="hilight2">projet en tête?</span><br><span class="hilight1">N'hésitez pas à me 
+            <span class="hilight2">contacter</span></span></h2>
+   <form id="formulaire">
+    <div class="formulaire">
+        <section>
+            <label for="nom" class="label1">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+        </section>
+
+        <section>
+            <label for="prenom" class="label1">Prénoms</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Vos prénoms" required>
+        </section>
+    </div>
+    <div>      
+            <label for="mail" class="label2">Votre email</label>
+            <input type="email" id="email" name="email" placeholder="Ex:votremail@" style="width: 480px;" required>
+    </div>
+    
+    <div>      
+            <label for="sujet" class="label3">Votre sujet</label>
+            <input type="text" id="sujet" name="sujet" placeholder="Le sujet" style="width: 480px;" required>
+    </div>
+
+     <div>      
+            
+            <label for="message"></label>
+            <textarea name="message" id="message" placeholder="Ecrivez votre message" required></textarea>
+    </div>
+    
+    <div>
+        <button type="submit"  class="bouton">Envoyer</button>
+    </div>
+   </form> 
+</div>
+ <strong></strong><a href="accueil.html" class="bouton1">⬅ Retour</a></strong>
+
+<script>
+    const formulaire = document.getElementById('formulaire');
+    const confirmation = document.getElementById('confirmation');
+
+    formulaire.addEventListener('submit',
+    function(e) {
+    e.preventDefault();
+    confirmation.textContent= "Formulaire envoyé avec succès!";
+    
+    setTimeout(() => {
+        confirmation.textContent = "";
+      }, 5000);
+      formulaire.reset();
+  });
+</script>
+</body>
+</html>

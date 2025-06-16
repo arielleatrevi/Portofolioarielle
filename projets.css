@@ -224,7 +224,7 @@ header {
 
   .icone {
     align-items: center;
-    gap: 2px;
+    gap: 0.5px;
     display: flex;
     margin-top: 100px;
   }

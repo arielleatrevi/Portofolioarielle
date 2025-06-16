@@ -113,15 +113,26 @@ textarea{
   }
 
   @media screen and (max-width: 768px) {
-  
- .formulaire{
+
+h2{
+  font-size: 19px;
+  }
+
+.hilight1{
+  font-size: 16px;
+}
+.hilight2{
+  color: #d7b403;
+  }
+
+.formulaire{
   display: flex;
   gap: 20px;
   justify-content: center;
  
   }
-
-  .label1{
+  
+.label1{
   display: block;
   text-align: left;
   margin-bottom: 5px;
@@ -134,7 +145,7 @@ textarea{
   text-align: left;
   font-size: 16px;
   margin-top: 3px;
-  padding-left: 160px;
+  padding-left: 100px;
   }
 
   .label3{
@@ -142,7 +153,7 @@ textarea{
   text-align: left;
   margin-bottom: 3px;
   font-size: 16px;
-  padding-left: 160px;
+  padding-left: 100px;
   margin-top: 4px;
   }
 
@@ -181,14 +192,15 @@ textarea {
   }
 
 .bouton1{
-  font-size: 14px;
-  background-color: #f2cb06;
+  font-size: 16px;
+  background-color: rgb(26, 2, 32);
   display: inline-block;
-  color: black;
+  color: white;
   text-align: left;
-  margin-left :35px;
+  margin-left :30px;
   justify-content: center;
   border-radius: 4px;
+  margin-top: 15px;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;

@@ -180,6 +180,7 @@ header {
     width: 100%;
     z-index: 5;
     top:60%;
+    height: 370px;
     position: absolute;
     padding: 8px;
     right: 0px;

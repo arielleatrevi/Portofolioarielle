@@ -213,14 +213,14 @@ header {
   }
 
   .icadre {
-    width: 340px;
+    width: 310px;
     height: 290px;
     padding: 15px 10px;
     margin-top: -2px;
   }
 
   input[type=range] {
-    width: 300px;
+    width: 290px;
   }
 
   h1 {

@@ -132,3 +132,144 @@ display: flex;
 gap: 700px;
 margin-top: 60px;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .menu-toggle {
+    display: block;
+    margin-top: 7px;
+    cursor: pointer;
+    margin-left: auto;
+
+  }
+  
+header { 
+  height: 8vh;
+  background-color:#111;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+ 
+  }
+
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 15px;
+  position: relative;
+  gap: 30px;
+  margin-top: -5px;
+}
+
+  .nav-lien {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    z-index: 5;
+    top:60%;
+    height: 370px;
+    position: absolute;
+    padding: 8px;
+    right: 0px;
+   
+  }
+
+  .nav-lien.active {
+    display: flex;
+  }
+
+  .nav-lien li {
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .nav-lien li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+   }
+
+  .nom {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 9px;
+  }
+
+.cadre {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .icadre {
+    width: 310px;
+    height: 230px;
+    padding: 15px;
+  }
+
+  .icone {
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .iconeim {
+    width: 80px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .hilight {
+  font-size: 22px;
+  font-weight: 900;
+  }
+
+.hilight2 {
+  font-size: 14;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: -10px;
+  }
+  .bouton {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+footer{
+  display: flex;
+  justify-content: center; 
+  gap: 35px;              
+  align-items: center;   
+  background-color: rgba(189, 179, 179, 0.8);
+  color: rgb(58, 55, 55);
+  font-size: 4px;
+  height: 45px;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+}

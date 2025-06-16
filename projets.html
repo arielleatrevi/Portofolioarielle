@@ -11,8 +11,9 @@
     <header>
     <nav class="navbar">
       <div class="nom">ATREVI <span style="color: #F7C948;">Arielle</span></div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-lien">
-        <li><a href="accueil.html" style="color: #F7C948;">Accueil</a></li>
+        <li><a href="index.html" style="color: #F7C948;">Accueil</a></li>
         <li><a href="a propos.html">À propos</a></li>
         <li><a href="compétences.html">Mes compétences</a></li>
         <li><a href="projets.html">Mes projets</a></li>
@@ -28,7 +29,7 @@
 
  <div class="cadre">
     <div>
-        <p class="icadre"><span class="hilight">Projet 1</span> <br><br><br> création de logo, d'une plaquette commerciale, de wireframes et d'un prototype haute fidélité pour 
+        <p class="icadre"><span class="hilight">Projet 1</span> <br><br> création de logo, d'une plaquette commerciale, de wireframes et d'un prototype haute fidélité pour 
             l'application web mobile de Leader'space <br><br><span><button id =bouton1 class="bouton">Voir projet</button></span></p>
 
     </div>
@@ -103,6 +104,13 @@
        });
         
     </script>
+
+    <script>
+    function toggleMenu() {
+    const navLien = document.querySelector('.nav-lien');
+    navLien.classList.toggle('active');
+  }
+ </script> 
 </body>
 <footer>
       <p>Designed by Arielle with HTML CSS JS</p>

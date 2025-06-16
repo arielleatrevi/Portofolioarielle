@@ -204,7 +204,7 @@ header {
 
   .nom {
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   color: #fff;
   margin-top: 9px;
@@ -237,23 +237,23 @@ header {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   .bouton {
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 16px;
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
 .iconeim {
-    width: 30px;
+    width: 40px;
   }
 
 .icone {
   display: flex;
   justify-content: center; 
-  gap: 50px;              
+  gap: 60px;              
   padding: 20px 0;
   background-color: white;
   margin-top: 80px;

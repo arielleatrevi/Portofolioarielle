@@ -179,7 +179,7 @@ header {
     background-color: #111;
     width: 100%;
     z-index: 5;
-    top:65%;
+    top:60%;
     position: absolute;
     padding: 8px;
     right: 0px;
@@ -247,13 +247,13 @@ header {
   }
 
 .iconeim {
-    width: 40px;
+    width: 50px;
   }
 
 .icone {
   display: flex;
   justify-content: center; 
-  gap: 60px;              
+  gap: 70px;              
   padding: 20px 0;
   background-color: white;
   margin-top: 80px;
@@ -266,7 +266,7 @@ footer{
   align-items: center;   
   background-color: rgba(189, 179, 179, 0.8);
   color: rgb(58, 55, 55);
-  font-size: 5px;
+  font-size: 4px;
   height: 45px;
   margin-top: 60px;
   padding: 0 20px;

@@ -151,18 +151,28 @@ margin-top: 60px;
     cursor: pointer;
 
   }
+  
+header {
+  position: relative;
+  height: 10vh;
+  background-color:#111;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+ 
+  }
 
   .nav-lien {
     display: none;
     flex-direction: column;
     background-color: #111;
-    width: 40%;
+    width: 100%;
     z-index: 5;
     top:75%;
     position: absolute;
     padding: 10px;
-    border-radius: 0px 0px 10px 6px;
-    right: -2px;
+    right: 1px;
    
   }
 
@@ -172,7 +182,8 @@ margin-top: 60px;
 
   .nav-lien li {
     margin: 10px 0;
-    text-align: center;
+    text-align: left;
+    padding-left: 60px;
   }
 
   .nav-lien li a {

@@ -138,7 +138,7 @@ margin-top: 60px;
 
 .menu-toggle {
   display: none;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   cursor: pointer;
 }
@@ -167,7 +167,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
+  padding: 9px 15px;
   position: relative;
   gap: 30px;
   margin-top: -5px;
@@ -204,7 +204,7 @@ header {
 
   .nom {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   margin-top: 9px;
@@ -219,12 +219,12 @@ header {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 30px;
     margin-top: -20px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 14.5px;
     text-align: center;
     margin-top: 20px;
   }
@@ -243,17 +243,17 @@ header {
   .bouton {
     font-size: 14px;
     padding: 8px 16px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
 .iconeim {
-    width: 28px;
+    width: 30px;
   }
 
 .icone {
   display: flex;
   justify-content: center; 
-  gap: 40px;              
+  gap: 50px;              
   padding: 20px 0;
   background-color: white;
   margin-top: 80px;
@@ -266,7 +266,7 @@ footer{
   align-items: center;   
   background-color: rgba(189, 179, 179, 0.8);
   color: rgb(58, 55, 55);
-  font-size: 6px;
+  font-size: 5px;
   height: 45px;
   margin-top: 60px;
   padding: 0 20px;

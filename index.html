@@ -12,6 +12,7 @@
   <header>
     <nav class="navbar">
       <div class="nom">ATREVI <span style="color: #F7C948;">Arielle</span></div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-lien">
         <li><a href="index.html" style="color: #F7C948;">Accueil</a></li>
         <li><a href="a propos.html">À propos</a></li>
@@ -56,9 +57,16 @@
     <script>
       function ouvrirprojets() {
        window.open("projets.html", "_blank") ;
-       setTimeout, 600;
        }
     </script>
+    
+    <script>
+  function toggleMenu() {
+    const navLien = document.querySelector('.nav-lien');
+    navLien.classList.toggle('active');
+  }
+ </script>
+    
     </main>
     <br><br><br>
 

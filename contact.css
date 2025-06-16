@@ -48,10 +48,17 @@ font-size: 18px;
   margin-top: 4px;
   }
 
-  input{
+
+.input1 {
   border-radius: 6px;
   width: 227px;
   height: 18px;
+  }
+
+.input2 {
+  width: 480px;
+  height: 18px;
+  border-radius: 6px;
   }
 
 textarea{
@@ -104,3 +111,94 @@ textarea{
   font-weight: bold;
 
   }
+
+  @media screen and (max-width: 768px) {
+  
+ .formulaire{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+ 
+  }
+
+  .label1{
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 16px;
+  }
+
+  
+  .label2{
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 3px;
+  padding-left: 160px;
+  }
+
+  .label3{
+  display: block;
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 16px;
+  padding-left: 160px;
+  margin-top: 4px;
+  }
+
+
+textarea {
+    width: 290px;
+    max-width: 350px;
+  }
+
+.input1 {
+    width: 135px;
+    max-width: 350px;
+  }
+
+.input2 {
+    width: 291px;
+    max-width: 350px;
+  }
+
+  .affiche {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .labeo {
+    padding: 20px;
+  }
+
+.bouton {
+    width: auto;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+.bouton1{
+  font-size: 14px;
+  background-color: #f2cb06;
+  display: inline-block;
+  color: black;
+  text-align: left;
+  margin-left :35px;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.affichage {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(2, 191, 2);
+  }
+
+}
+

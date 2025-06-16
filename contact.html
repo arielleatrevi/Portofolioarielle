@@ -15,22 +15,22 @@
     <div class="formulaire">
         <section>
             <label for="nom" class="label1">Nom</label>
-            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" class="input1" required>
         </section>
 
         <section>
             <label for="prenom" class="label1">Prénoms</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Vos prénoms" required>
+            <input type="text" id="prenom" name="prenom" placeholder="Vos prénoms" class="input1" required>
         </section>
     </div>
     <div>      
             <label for="mail" class="label2">Votre email</label>
-            <input type="email" id="email" name="email" placeholder="Ex:votremail@" style="width: 480px;" required>
+            <input type="email" id="email" name="email" placeholder="Ex:votremail@" class="input2" required>
     </div>
     
     <div>      
             <label for="sujet" class="label3">Votre sujet</label>
-            <input type="text" id="sujet" name="sujet" placeholder="Le sujet" style="width: 480px;" required>
+            <input type="text" id="sujet" name="sujet" placeholder="Le sujet" class="input2">
     </div>
 
      <div>      
@@ -57,7 +57,7 @@
     
     setTimeout(() => {
         confirmation.textContent = "";
-      }, 5000);
+      }, 8000);
       formulaire.reset();
   });
 </script>

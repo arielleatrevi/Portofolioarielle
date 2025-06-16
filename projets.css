@@ -210,14 +210,16 @@ header {
 .cadre {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     padding: 10px;
+   
   }
 
   .icadre {
     width: 310px;
     height: 230px;
     padding: 15px;
+     margin-top: -6px;
   }
 
   .icone {

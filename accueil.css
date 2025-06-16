@@ -254,7 +254,7 @@ header {
 .icone {
   display: flex;
   justify-content: center; 
-  gap: 70px;              
+  gap: 45px;              
   padding: 20px 0;
   background-color: white;
   margin-top: 80px;

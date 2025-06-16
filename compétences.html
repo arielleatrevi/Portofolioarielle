@@ -11,10 +11,12 @@
 
   <header>
     <nav class="navbar">
-      <div class="nom">ATREVI <span style="color: #f7e228;
-      font-weight: 900; ">Arielle</span></div>
+
+      <div class="nom">ATREVI <span style="color:#f7e228; font-weight: 900;">Arielle</span></div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      
       <ul class="nav-lien">
-        <li><a href="accueil.html" style="font-weight: bolder;">Accueil</a></li>
+        <li><a href="index.html" style="font-weight: bolder;">Accueil</a></li>
         <li><a href="a propos.html">À propos</a></li>
         <li><a href="compétences.html">Mes compétences</a></li>
         <li><a href="projets.html">Mes projets</a></li>
@@ -22,18 +24,11 @@
       </ul>
     </nav>
   </header>
-  <h1>MES COMPETENCES</h1>
+  <h1>Mes compétences</h1>
 
  <div class="cadre">
-    <div>
-        <p class="icadre"><span class="hilight">Soft skrill</span><br><br>Gestion de projet <br><input type="range" id="sk1" min="0" max="100" value="80"> 
-            <br> Tavail en équipe <br><input type="range"  id="sk2" min="0" max="100" value="70">
-            <br>Créativité <br><input type="range" id="sk3" min="0" max="100" value="85"><br> Ecoute active <br>
-            <input type="range"  id="sk4" min="0" max="100" value="75"></p>
 
-    </div>
-
-    <div>
+  <div>
 
     <p class="icadre"><span class="hilight">Hard skrill</span><br><br>HTML <br><input type="range" 
             id="sk5" min="0" max="100" value="80"><br> CSS <br><input type="range"  id="sk6" min="0" max="100" value="60">
@@ -42,6 +37,16 @@
             <input type="range"  id="sk1" min="0" max="100" value="90"></p>
 
     </div>
+    
+    <div>
+        <p class="icadre"><span class="hilight">Soft skrill</span><br><br>Gestion de projet <br><input type="range" id="sk1" min="0" max="100" value="80"> 
+            <br> Tavail en équipe <br><input type="range"  id="sk2" min="0" max="100" value="70">
+            <br>Créativité <br><input type="range" id="sk3" min="0" max="100" value="85"><br> Ecoute active <br>
+            <input type="range"  id="sk4" min="0" max="100" value="75"></p>
+
+    </div>
+
+    
  </div>   
  <script>
     const curs = document.querySelectorAll('input[type="range"]');
@@ -54,7 +59,12 @@
       slider.addEventListener('input', () => {
     });
     });
-    
  </script>  
+ <script>
+    function toggleMenu() {
+    const navLien = document.querySelector('.nav-lien');
+    navLien.classList.toggle('active');
+  }
+ </script> 
 </body>
 </html>

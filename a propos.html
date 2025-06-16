@@ -12,8 +12,9 @@
 <header>
     <nav class="navbar">
       <div class="nom">ATREVI <span style="color: #F7C948;">Arielle</span></div>
+       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-lien">
-        <li><a href="accueil.html" style="color: #F7C948;">Accueil</a></li>
+        <li><a href="index.html" style="color: #F7C948;">Accueil</a></li>
         <li><a href="a propos.html">À propos</a></li>
         <li><a href="compétences.html">Mes compétences</a></li>
         <li><a href="projets.html">Mes projets</a></li>
@@ -21,17 +22,21 @@
       </ul>
     </nav>
   </header>
-   <h1>A PROPOS DE MOI</h1>
-<div class="propos">
-<section>
-    <p class="paragraphe">Très motivée et d’une bonne aisance relationnelle, j’ai de la facilité à travailler en équipe <br>et de façon individuelle.
-        Je dispose des compétences nécessaires pour travailler sur différents <br>projets de création d'interface utilisateur,
-        de developpement web frontal (HTML, CSS, JAVA script) <br> et de rédaction web. Mes outils au quotidien sont figma, canva, VS code.</p>
-        
-    <p class="paragraphe">D’une forte réactivité, responsable et assidue, je cherche à développer mes compétences sur le plan <br>professionnel. 
-        Je suis totalement autonome et je n’hésite pas à prendre des initiatives pour une bonne <br>évolution des choses.</p>
+   <h1>A propos de moi</h1>
 
-    <p class="paragraphe"><strong>Certifications et diplômes</strong></p>
+<div class="propos">
+    <section>
+        <img src="image (9).jpg" alt="Photo de profil" class="image">
+    </section>
+<section>
+    <p class="paragraphe">Très motivée et d’une bonne aisance relationnelle, j’ai de la facilité à travailler en équipe 
+        et de façon individuelle. Je dispose des compétences nécessaires pour travailler sur différents projets de création d'interface utilisateur,
+        de developpement web frontal (HTML, CSS, JAVA script) et de rédaction web. Mes outils au quotidien sont figma, canva, VS code.</p>
+        
+    <p class="paragraphe">D’une forte réactivité, responsable et assidue, je cherche à développer mes compétences sur le plan professionnel. 
+        Je suis totalement autonome et je n’hésite pas à prendre des initiatives pour une bonne évolution des choses.</p>
+
+    <p class="paragraphe1"><strong>Certifications et diplômes</strong></p>
 
             <li>Certification coursera UX/UI design</li>
             <li>Licence professionnelle</li>
@@ -40,11 +45,15 @@
     <strong></strong><a href="CV  ATREVI Arielle.pdf" target= "_blank" class="bouton">Télécharger mon CV</a></strong>
         
     </section>
-    <section>
-        <img src="image (9).jpg" alt="Photo de profil" class="image">
-    </section>
+    
         </div>
-        
+
+    <script>
+    function toggleMenu() {
+    const navLien = document.querySelector('.nav-lien');
+    navLien.classList.toggle('active');
+  }
+ </script> 
 </body>
 <footer>
       <p>Designed by Arielle with HTML CSS JS</p>

@@ -111,11 +111,11 @@ textarea{
 
   }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 h2{
   font-size: 19px;
-  margin-top: 25px;
+  margin-top: 45px;
   }
 
 .hilight1{
@@ -129,7 +129,7 @@ h2{
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 30px;
  
   }
   
@@ -146,7 +146,7 @@ h2{
   text-align: left;
   font-size: 16px;
   margin-top: 3px;
-  padding-left: 5px;
+  padding-left: 8px;
   }
 
   .label3{
@@ -154,7 +154,7 @@ h2{
   text-align: left;
   margin-bottom: 3px;
   font-size: 16px;
-  padding-left: 5px;
+  padding-left: 8px;
   margin-top: 4px;
   }
 
@@ -170,16 +170,18 @@ textarea {
   }
 
 .input2 {
-    width: 291px;
+  width: 291px;
     max-width: 350px;
   }
 
-  .affiche {
-    font-size: 16px;
-    padding: 0 10px;
   }
+.affiche{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 65px;
+}
 
-  .labeo {
+.labeo {
     padding: 20px;
   }
 
@@ -201,7 +203,7 @@ textarea {
   margin-left :5px;
   justify-content: center;
   border-radius: 4px;
-  margin-top: 45px;
+  margin-top: 55px;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
@@ -213,5 +215,4 @@ textarea {
     color: rgb(2, 191, 2);
   }
 
-}
 
